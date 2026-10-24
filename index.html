@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selected photographs by Your Name." />
+    <title>Your Name — Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top">Zhao<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="mailto:hello@example.com">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">Selected photographs · 2024—2026</p>
+        <h1 id="intro-title">Between <em>places</em><br />and people.</h1>
+        <p class="intro-note">Portraits, landscapes and the light in between.</p>
+      </section>
+
+      <section id="work" class="work" aria-label="Photography work">
+        <div class="section-bar">
+          <p>Selected work</p>
+          <div class="filters" aria-label="Filter photographs">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="portrait">Portrait</button>
+            <button data-filter="place">Places</button>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure class="photo tall" data-category="portrait"><button data-image="assets/images/071A2128.jpg" data-title="Coastline"><img src="assets/images/071A2128.jpg" alt="Portrait by the sea" loading="eager" /><span>01 / Coastline</span></button></figure>
+          <figure class="photo tall" data-category="portrait"><button data-image="assets/images/071A2898.jpg" data-title="On the bus"><img src="assets/images/071A2898.jpg" alt="Portrait on a bus" loading="lazy" /><span>02 / On the bus</span></button></figure>
+          <figure class="photo tall" data-category="portrait"><button data-image="assets/images/27151E4F-B2E6-4DED-ACE1-B6F5DD072244.JPG" data-title="Red study"><img src="assets/images/27151E4F-B2E6-4DED-ACE1-B6F5DD072244.JPG" alt="Studio portrait in red" loading="lazy" /><span>03 / Red study</span></button></figure>
+          <figure class="photo tall" data-category="place"><button data-image="assets/images/DF849BB6-7143-47E9-8DC8-D49B3877E3AF.JPG" data-title="At dusk"><img src="assets/images/DF849BB6-7143-47E9-8DC8-D49B3877E3AF.JPG" alt="Silhouette against a dusk sky" loading="lazy" /><span>04 / At dusk</span></button></figure>
+          <figure class="photo tall" data-category="place"><button data-image="assets/images/IMG_0007.jpg" data-title="After hours"><img src="assets/images/IMG_0007.jpg" alt="Red neon sign in a dark interior" loading="lazy" /><span>05 / After hours</span></button></figure>
+          <figure class="photo wide" data-category="place"><button data-image="assets/images/IMG_0312.jpg" data-title="A way through"><img src="assets/images/IMG_0312.jpg" alt="Stone steps through a green forest" loading="lazy" /><span>06 / A way through</span></button></figure>
+          <figure class="photo tall" data-category="place"><button data-image="assets/images/IMG_0439.JPG" data-title="Green room"><img src="assets/images/IMG_0439.JPG" alt="Tall trees in a green forest" loading="lazy" /><span>07 / Green room</span></button></figure>
+          <figure class="photo tall" data-category="portrait"><button data-image="assets/images/IMG_1080.JPG" data-title="Wildflower"><img src="assets/images/IMG_1080.JPG" alt="Night portrait among foliage" loading="lazy" /><span>08 / Wildflower</span></button></figure>
+          <figure class="photo tall" data-category="place"><button data-image="assets/images/IMG_3294.JPG" data-title="Last light"><img src="assets/images/IMG_3294.JPG" alt="Sunset behind a city tower" loading="lazy" /><span>09 / Last light</span></button></figure>
+          <figure class="photo wide" data-category="place"><button data-image="assets/images/IMG_4369.jpg" data-title="Passing through"><img src="assets/images/IMG_4369.jpg" alt="Light trails on a city street at night" loading="lazy" /><span>10 / Passing through</span></button></figure>
+          <figure class="photo wide" data-category="portrait"><button data-image="assets/images/IMG_4588.JPG" data-title="Summer smoke"><img src="assets/images/IMG_4588.JPG" alt="Portrait in sunlight and smoke" loading="lazy" /><span>11 / Summer smoke</span></button></figure>
+          <figure class="photo tall" data-category="portrait"><button data-image="assets/images/IMG_6723.JPG" data-title="Blue hour"><img src="assets/images/IMG_6723.JPG" alt="Portrait against a blue wall" loading="lazy" /><span>12 / Blue hour</span></button></figure>
+          <figure class="photo wide" data-category="portrait"><button data-image="assets/images/IMG_9760.jpg" data-title="A small gesture"><img src="assets/images/IMG_9760.jpg" alt="Warm close portrait" loading="lazy" /><span>13 / A small gesture</span></button></figure>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <p class="eyebrow">About</p>
+        <p class="about-copy">I photograph people and places in changing light—quiet encounters, long journeys, and the spaces that hold them.</p>
+        <a class="email-link" href="junzhao1116@gamil.com">For commissions &amp; conversations <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer><p>© <span id="year"></span> Zhao</p><a href="https://www.instagram.com/c.h.u.i.b.i.i" target="_blank" rel="noreferrer">Instagram ↗</a></footer>
+
+    <dialog class="lightbox"><button class="close" aria-label="Close full-screen image">×</button><img src="" alt="" /><p></p></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
